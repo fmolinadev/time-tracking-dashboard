@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Rubik;
+  max-width: 1140px;
+  /* background-color: var(--neutral-very-dark); */
+}
+
+:root {
+  --neutral-very-dark: hsl(226, 43%, 10%);
+  --neutral-dark: hsl(235, 46%, 20%);
+  --neutral-desaturated: hsl(235, 45%, 61%);
+  --neutral-pale-blue: hsl(236, 100%, 87%);
+  --primary-blue: hsl(246, 80%, 60%);
+  --primary-light-work: hsl(15, 100%, 70%);
+  --primary-soft-play: hsl(195, 74%, 62%);
+  --primary-light-study: hsl(348, 100%, 68%);
+  --primary-lime-exercise: hsl(145, 58%, 55%);
+  --primary-violet-social: hsl(264, 64%, 52%);
+  --primary-soft-selfcare: hsl(43, 84%, 65%);
+}

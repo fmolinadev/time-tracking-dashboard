@@ -1,0 +1,24 @@
+.photo-container {
+  width: 180px;
+  background: none;
+}
+
+.photo-image {
+  max-width: 40%;
+  min-width: 38%;
+  border: 3px solid white;
+  border-radius: 55%;
+}
+
+@media only screen and (max-width: 375px) {
+  .photo-container {
+    width: 120px;
+    background: none;
+    padding-right: 15px;
+  }
+
+  .photo-image {
+    max-width: 85%;
+    min-width: 30%;
+  }
+}
