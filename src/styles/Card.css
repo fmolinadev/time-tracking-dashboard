@@ -1,0 +1,32 @@
+.card-container {
+}
+
+.card-content-top {
+}
+
+.card-content-info {
+}
+
+.card-content-info-text {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-content-info-text h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.card-content-info-text span {
+}
+
+.card-content-info-details {
+}
+
+.card-content-info-details h2 {
+  font-size: 45px;
+  font-weight: 300;
+}
+
+.card-content-info-details h5 {
+}
