@@ -7,7 +7,8 @@
 
 @media only screen and (max-width: 375px) {
   .allCard-container {
-    grid-template-columns: 300px;
-    grid-row-gap: 1em;
+    grid-template-columns: 360px;
+    grid-row-gap: 2em;
+    padding-bottom: 75px;
   }
 }

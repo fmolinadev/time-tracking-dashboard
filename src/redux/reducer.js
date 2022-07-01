@@ -1,17 +1,24 @@
 const initialState = {
   filter: [],
-  backUp: [],
 };
 
 function rootReducer(state = initialState, action) {
   switch (action.type) {
-    case "GET_DAYS":
+    case "SET_DAILY":
       return {
         ...state,
-        backUp: action.payload,
         filter: action.payload,
-      }; //retorno la copia del estado y paso el action.
-
+      };
+    case "SET_WEEKLY":
+      return {
+        ...state,
+        filter: action.payload,
+      };
+    case "SET_MONTHLY":
+      return {
+        ...state,
+        filter: action.payload,
+      };
     default:
       return state;
   }

@@ -2,7 +2,9 @@
   margin: 0;
   padding: 0;
   font-family: Rubik;
-  max-width: 1140px;
+  justify-content: center;
+  align-items: center;
+  background: none;
 }
 
 :root {
@@ -20,5 +22,8 @@
 }
 
 .home {
-  background-color: var(--neutral-very-dark);
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  background: var(--neutral-very-dark);
 }
