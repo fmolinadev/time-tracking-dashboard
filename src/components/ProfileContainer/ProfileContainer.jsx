@@ -1,6 +1,7 @@
 import React from "react";
 import "../../styles/ProfileContaier.css";
 import Photo from "../Photo/Photo";
+import { viewDaily, viewWeekly, viewMonthly } from "../../redux/actions";
 import "../../styles/ProfileContaier.css";
 
 const ProfileContainer = () => {
@@ -15,9 +16,27 @@ const ProfileContainer = () => {
       </div>
       <div className="profile-options">
         <ul>
-          <li>Dayli</li>
-          <li>Weekly</li>
-          <li>Monthly</li>
+          <li
+            onClick={() => {
+              console.log("CLICK EN DAYLI", viewDaily());
+            }}
+          >
+            Daily
+          </li>
+          <li
+            onClick={() => {
+              console.log("CLICK EN WEEKLY", viewDaily());
+            }}
+          >
+            Weekly
+          </li>
+          <li
+            onClick={() => {
+              console.log("CLICK EN MONTHLY", viewMonthly());
+            }}
+          >
+            Monthly
+          </li>
         </ul>
       </div>
     </aside>
