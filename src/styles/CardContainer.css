@@ -1,0 +1,13 @@
+.allCard-container {
+  display: grid;
+  grid-template-columns: 240px 240px 240px;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+}
+
+@media only screen and (max-width: 375px) {
+  .allCard-container {
+    grid-template-columns: 300px;
+    grid-row-gap: 1em;
+  }
+}
