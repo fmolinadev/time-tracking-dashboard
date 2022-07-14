@@ -50,8 +50,8 @@
   color: white;
 }
 
-.card-content-info-text span {
-}
+/* .card-content-info-text span {
+} */
 
 .card-content-info-details {
   padding-left: 26px;
@@ -72,7 +72,7 @@
   opacity: 0.6;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 395px) {
   .card-container {
     width: 320px;
     height: 250;

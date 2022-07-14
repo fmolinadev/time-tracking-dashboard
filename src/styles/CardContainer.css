@@ -5,7 +5,7 @@
   grid-row-gap: 1em;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 395px) {
   .allCard-container {
     grid-template-columns: 360px;
     grid-row-gap: 2em;

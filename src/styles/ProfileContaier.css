@@ -59,7 +59,7 @@
   cursor: pointer;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 395px) {
   .profile-container {
     width: 320px;
     height: 450;

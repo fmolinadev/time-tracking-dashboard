@@ -22,8 +22,14 @@
 }
 
 .home {
-  height: 100%;
   width: 100%;
+  height: 100vh;
   margin: auto;
   background: var(--neutral-very-dark);
+}
+
+@media only screen and (max-width: 395px) {
+  .home {
+    height: 100%;
+  }
 }
