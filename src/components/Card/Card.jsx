@@ -1,19 +1,13 @@
 import React from "react";
-import "../../styles/Card.css";
 import WorkIcon from "../../images/icon-work.svg";
 import PlayIcon from "../../images/icon-play.svg";
 import StudyIcon from "../../images/icon-study.svg";
 import ExerciseIcon from "../../images/icon-exercise.svg";
 import SocialIcon from "../../images/icon-social.svg";
 import SelfcareIcon from "../../images/icon-self-care.svg";
+import "../../styles/Card.css";
 
-// import { connect } from "react-redux";
-
-export const Card = ({ info }) => {
-  const daily = info.timeframes.daily;
-  // const monthly = info.timeframes.monthly;
-  // const weekly = info.timeframes.weekly;
-
+export const Card = ({ info, timeframe }) => {
   const workStyle = {
     background: "var(--primary-light-work)",
   };
@@ -32,6 +26,21 @@ export const Card = ({ info }) => {
   const selfcareStyle = {
     background: "var(--primary-soft-selfcare)",
   };
+
+  let dataTime = "day";
+  switch (timeframe) {
+    case "daily":
+      dataTime = "day";
+      break;
+    case "weekly":
+      dataTime = "week";
+      break;
+    case "monthly":
+      dataTime = "month";
+      break;
+    default:
+      break;
+  }
 
   return (
     <div className="card-container">
@@ -79,8 +88,19 @@ export const Card = ({ info }) => {
           <span>...</span>
         </div>
         <div className="card-content-info-details">
-          <h2>{daily.current} hrs</h2>
-          <h5>Last Week - {daily.previous}hrs</h5>
+          <h2>
+            {info.timeframes[`${timeframe}`].current
+              ? info.timeframes[`${timeframe}`].current
+              : "0"}{" "}
+            hrs
+          </h2>
+          <h5>
+            Last {dataTime} -
+            {info.timeframes[`${timeframe}`].previous
+              ? info.timeframes[`${timeframe}`].previous
+              : "0"}{" "}
+            hrs
+          </h5>
         </div>
       </div>
     </div>
