@@ -1,16 +1,10 @@
-.FooterContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-}
 .Footer {
   display: flex;
-  padding-top: 9px;
-  padding-bottom: 9px;
   align-items: center;
   text-align: center;
-  margin-top: 45px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 25px;
 }
 .Span {
   font-family: "Red Hat Display", sans-serif;
@@ -20,10 +14,9 @@
 }
 
 @media only screen and (max-width: 395px) {
-  .FooterContainer {
-    height: 30px;
-    margin-top: -55px;
-    padding-bottom: 55px;
+  .Footer {
+    height: 20px;
+    padding-bottom: 15px;
     align-items: center;
     text-align: center;
     justify-content: center;
